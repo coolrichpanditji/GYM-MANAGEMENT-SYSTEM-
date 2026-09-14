@@ -1,5 +1,0 @@
-import { initializeApp } from 'https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js';
-import { getAuth, GoogleAuthProvider, signInWithPopup, signInWithEmailAndPassword, createUserWithEmailAndPassword, signOut, onAuthStateChanged, updateProfile, sendPasswordResetEmail } from 'https://www.gstatic.com/firebasejs/12.19.0/firebase-auth.js';
-import { getFirestore, collection, doc, setDoc, deleteDoc, onSnapshot, getDoc } from 'https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore.js';
-const firebaseConfig={apiKey:'AIzaSyC_yIOlMS7rzruPUAC5fSQvH1q1VtULLyY',authDomain:'employee-management-syst-ae3ed.firebaseapp.com',projectId:'employee-management-syst-ae3ed',storageBucket:'employee-management-syst-ae3ed.firebasestorage.app',messagingSenderId:'748496934854',appId:'1:748496934854:web:e723731a544fa5953044c7'};
-const app=initializeApp(firebaseConfig);export const auth=getAuth(app);export const db=getFirestore(app);export const googleProvider=new GoogleAuthProvider();export {signInWithPopup,signInWithEmailAndPassword,createUserWithEmailAndPassword,signOut,onAuthStateChanged,updateProfile,sendPasswordResetEmail,collection,doc,setDoc,deleteDoc,onSnapshot,getDoc};
