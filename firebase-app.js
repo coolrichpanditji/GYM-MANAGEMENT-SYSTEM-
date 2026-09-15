@@ -1,0 +1,5 @@
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js';
+import { getAuth, GoogleAuthProvider, signInWithPopup, signInWithEmailAndPassword, createUserWithEmailAndPassword, signOut, onAuthStateChanged, updateProfile, sendPasswordResetEmail } from 'https://www.gstatic.com/firebasejs/12.19.0/firebase-auth.js';
+import { getFirestore, collection, doc, setDoc, deleteDoc, onSnapshot, getDoc } from 'https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore.js';
+const firebaseConfig={apiKey:'AIzaSyCiOHELrFfAxHOOc0J4E5AQWj3kza2Nslk',authDomain:'gym-management-system-4eadb.firebaseapp.com',projectId:'gym-management-system-4eadb',storageBucket:'gym-management-system-4eadb.firebasestorage.app',messagingSenderId:'590074488519',appId:'1:590074488519:web:c505d943ea5cfa785140e2'};
+const app=initializeApp(firebaseConfig);export const auth=getAuth(app);export const db=getFirestore(app);export const googleProvider=new GoogleAuthProvider();export {signInWithPopup,signInWithEmailAndPassword,createUserWithEmailAndPassword,signOut,onAuthStateChanged,updateProfile,sendPasswordResetEmail,collection,doc,setDoc,deleteDoc,onSnapshot,getDoc};
